@@ -2,9 +2,10 @@
   "name": "api-viewer",
   "version": "1.0.0",
   "description": "restful api查看&管理界面",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "test": ""
+    "watch": "webpack -w --config config/webpack.config.js --env.development",
+    "build": "webpack --config config/webpack.config.js --env.production"
   },
   "repository": {
     "type": "git",
@@ -22,10 +23,31 @@
   },
   "homepage": "https://github.com/zzzzc/api-viewer#readme",
   "devDependencies": {
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.5.2",
+    "babel-preset-react": "^6.24.1",
+    "babel-runtime": "^6.23.0",
+    "clean-webpack-plugin": "^0.1.16",
+    "css-loader": "^0.28.4",
+    "eslint": "^4.1.1",
+    "eslint-loader": "^1.8.0",
+    "eslint-plugin-babel": "^4.1.1",
+    "eslint-plugin-react": "^7.1.0",
+    "extract-text-webpack-plugin": "^2.1.2",
+    "file-loader": "^0.11.2",
+    "html-webpack-plugin": "^2.29.0",
+    "node-sass": "^4.5.3",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.18.2",
+    "uglifyjs-webpack-plugin": "^0.4.6",
     "webpack": "^3.0.0"
   },
   "dependencies": {
     "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-router": "^4.1.1",
     "rx": "^4.1.0"
   }
 }
