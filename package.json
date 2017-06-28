@@ -1,0 +1,31 @@
+{
+  "name": "api-viewer",
+  "version": "1.0.0",
+  "description": "restful api查看&管理界面",
+  "main": "index.js",
+  "scripts": {
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zzzzc/api-viewer.git"
+  },
+  "keywords": [
+    "restful",
+    "api",
+    "post"
+  ],
+  "author": "zoucong",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zzzzc/api-viewer/issues"
+  },
+  "homepage": "https://github.com/zzzzc/api-viewer#readme",
+  "devDependencies": {
+    "webpack": "^3.0.0"
+  },
+  "dependencies": {
+    "react": "^15.6.1",
+    "rx": "^4.1.0"
+  }
+}
